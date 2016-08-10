@@ -14,7 +14,7 @@ func main() {
 	r := httprouter.New()
 	r.GET("/", checkTunnels)
 
-	http.ListenAndServe(":3001", r)
+	http.ListenAndServe(":6061", r)
 }
 
 func checkTunnels(w http.ResponseWriter, r *http.Request, p httprouter.Params) {

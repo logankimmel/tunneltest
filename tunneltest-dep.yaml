@@ -1,0 +1,18 @@
+#Kubernetes
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: tunneltest-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tunneltest
+    spec:
+      containers:
+      - image: gcr.io/outscore-2016/tunneltest:v2
+        name: tunneltest
+        ports:
+        - containerPort: 6061

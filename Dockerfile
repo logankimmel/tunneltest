@@ -7,4 +7,4 @@ RUN go install tunneltest
 WORKDIR /go/src/tunneltest
 ENTRYPOINT /go/bin/tunneltest
 
-EXPOSE 3001
+EXPOSE 6061
